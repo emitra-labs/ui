@@ -1,0 +1,20 @@
+name: Deploy
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    uses: emitra-labs/actions/.github/workflows/build-docker-sveltekit-static.yaml@main
+    permissions:
+      contents: read
+      packages: write
+    secrets: inherit
+
+  deploy:
+    uses: emitra-labs/actions/.github/workflows/deploy-kubernetes.yaml@main
+    needs: build
+    permissions:
+      contents: read
+    secrets: inherit
