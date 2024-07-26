@@ -10,8 +10,6 @@ jobs:
     permissions:
       contents: read
       packages: write
-    with:
-      host: ui.emitra.co
     secrets: inherit
 
   deploy:
@@ -19,4 +17,6 @@ jobs:
     needs: build
     permissions:
       contents: read
+    with:
+      host: ui.emitra.co
     secrets: inherit
