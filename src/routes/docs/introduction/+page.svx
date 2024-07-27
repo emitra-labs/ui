@@ -1,0 +1,4 @@
+# Introduction
+
+Welcome to Emitra UI, a Svelte UI library designed to simplify your web development.
+It offers a collection of customizable, performance-optimized components that integrate seamlessly with Svelte applications.

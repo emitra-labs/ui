@@ -1,0 +1,93 @@
+<script lang="ts">
+	import { page } from '$app/stores';
+	import { Button, CollapsibleMenu } from '$lib';
+	import type { ComponentGroup } from './components/utils';
+	import type { ExampleGroup } from './examples/utils';
+
+	export let componentGroups: ComponentGroup[];
+	export let exampleGroups: ExampleGroup[];
+
+	type GroupedItem = {
+		title: string;
+		href?: string;
+		items: {
+			title: string;
+			href?: string;
+			items?: { title: string; href?: string }[];
+		}[];
+	};
+
+	const groupedItems: GroupedItem[] = [
+		{
+			title: 'General',
+			items: [
+				{
+					title: 'Introduction',
+					href: '/docs/introduction'
+				},
+				{
+					title: 'Getting started',
+					href: '/docs/getting-started'
+				}
+			]
+		},
+		{
+			title: 'Components',
+			items: componentGroups.map((g) => {
+				return {
+					title: g.name,
+					items: g.components.map((c) => {
+						return {
+							title: c.name,
+							href: `/docs/components/${g.slug}/${c.slug}`
+						};
+					})
+				};
+			})
+		},
+		{
+			title: 'Examples',
+			items: exampleGroups.map((g) => {
+				return {
+					title: g.name,
+					items: g.examples.map((c) => {
+						return {
+							title: c.name,
+							href: `/examples/${g.slug}/${c.slug}`
+						};
+					})
+				};
+			})
+		}
+	];
+</script>
+
+<div class="flex flex-col gap-9 pl-2.5 pr-3.5 pb-3">
+	{#each groupedItems as groupedItem}
+		<div>
+			<h3 class="text-xs font-medium dimmed uppercase mb-3">{groupedItem.title}</h3>
+			<div class="flex flex-col gap-1 -mx-2.5">
+				{#each groupedItem.items as item}
+					{@const active = Boolean(item.href) && $page.url.pathname.startsWith(item.href || '')}
+					{#if item.items}
+						<CollapsibleMenu
+							title={item.title}
+							items={item.items}
+							buttonClassName="px-2.5 h-9"
+							itemClassName="px-2.5 h-9"
+						/>
+					{:else}
+						<Button
+							href={item.href}
+							class="px-2.5 h-9 justify-start"
+							size="sm"
+							variant={active ? 'secondary' : 'transparent'}
+						>
+							{item.title}
+						</Button>
+					{/if}
+				{/each}
+			</div>
+		</div>
+	{/each}
+</div>
