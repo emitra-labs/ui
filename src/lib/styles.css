@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	html,
+	body,
+	body > div {
+		@apply h-full;
+	}
+
+	body {
+		@apply relative dark:bg-neutral-900 dark:text-neutral-200;
+	}
+
+	.dimmed {
+		@apply dark:stroke-neutral-300/80 dark:text-neutral-300/80;
+	}
+}
+
+.dark {
+	color-scheme: dark;
+}

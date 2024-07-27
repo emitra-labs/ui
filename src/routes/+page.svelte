@@ -1,3 +1,4 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div class="h-full flex flex-col items-center justify-center">
+	<h1 class="text-3xl font-semibold">Coming Soon</h1>
+	<p class="dimmed text-lg mt-2.5">We're working hard to bring this site to life.</p>
+</div>
