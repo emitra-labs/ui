@@ -5,7 +5,7 @@
 		strokeWidth?: number;
 	};
 
-	export let strokeWidth: $$Props['strokeWidth'] = 2.75;
+	export let strokeWidth: $$Props['strokeWidth'] = 2.5;
 </script>
 
 <svg
