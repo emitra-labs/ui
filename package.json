@@ -6,6 +6,7 @@
 		"type": "git",
 		"url": "git+https://github.com/emitra-labs/ui.git"
 	},
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
