@@ -1,33 +1,25 @@
 <script>
-  import { Button, Preview } from '$lib';
+  import { Preview, Spinner } from '$lib';
 </script>
 
 # Spinner
 
-Allows users to trigger actions, navigate through the app, or submit forms.
+Visually indicates loading or processing activity.
 
 <Preview>
-  <Button>Default button</Button>
-  <Button variant="primary">Primary button</Button>
-  <Button variant="secondary">Secondary button</Button>
-  <Button variant="transparent">Transparent button</Button>
-  <Button size="sm">Small button</Button>
+  <Spinner />
+  <Spinner class="w-10 h-10" strokeWidth={1.5} />
 </Preview>
 
 ```svelte
-<Button>Default button</Button>
-<Button variant="primary">Primary button</Button>
-<Button variant="transparent">Transparent button</Button>
-<Button variant="secondary">Secondary button</Button>
-<Button size="sm">Small button</Button>
+<Spinner />
+<Spinner class="w-10 h-10" strokeWidth={1.5} />
 ```
 
 ## Properties
 
-This component extends `HTMLButtonAttributes` with these additional properties:
+This component extends `HTMLHtmlAttributes` with these additional properties:
 
-| Name    | Type     | Description |
-|---------|----------|-------------|
-| href    | string   | Navigates to the given URL when clicked. |
-| size    | enum     | The button size. Available options: `sm` and `md`. |
-| variant | enum     | The button visual style. Available options: `default`, `primary`, `secondary` and `transparent`. |
+| Name        | Type   | Description |
+|-------------|--------|-------------|
+| strokeWidth | string | The thickness of the stroke. The default value is `2.75`. |
