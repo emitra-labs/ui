@@ -11,8 +11,8 @@ module.exports = {
 				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				mono: ['Fira Code', 'monospace']
+				mono: ['Fira Code', 'monospace'],
+				sans: ['Manrope', 'sans-serif']
 			},
 			typography: ({ theme }) => ({
 				DEFAULT: {

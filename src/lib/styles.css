@@ -10,7 +10,7 @@
 	}
 
 	body {
-		@apply relative dark:bg-neutral-900 dark:text-neutral-200 dark:stroke-neutral-200;
+		@apply relative font-medium tracking-wide dark:bg-neutral-900 dark:text-neutral-200 dark:stroke-neutral-200;
 	}
 
 	.dimmed {
