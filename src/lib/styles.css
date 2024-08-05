@@ -10,11 +10,12 @@
 	}
 
 	body {
-		@apply relative font-medium tracking-wide dark:bg-neutral-900 dark:text-neutral-200 dark:stroke-neutral-200;
+		@apply relative font-medium tracking-wide text-neutral-800 stroke-neutral-800
+			dark:bg-neutral-900 dark:text-neutral-200 dark:stroke-neutral-200;
 	}
 
 	.dimmed {
-		@apply dark:stroke-neutral-300/80 dark:text-neutral-300/80;
+		@apply stroke-neutral-600 text-neutral-600 dark:stroke-neutral-300/80 dark:text-neutral-300/80;
 	}
 }
 

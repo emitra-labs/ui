@@ -21,11 +21,12 @@
 			size === 'sm' && 'px-4 h-10 text-sm',
 			size === 'md' && 'px-4 h-11 text-base',
 			'w-full rounded-md outline-none leading-none',
+			'bg-neutral-100/60 placeholder-neutral-500/70',
 			'dark:bg-neutral-700/50 dark:placeholder-neutral-400',
-			'border-0 ring-1 ring-inset ring-neutral-400 dark:ring-neutral-700/80',
+			'border-0 ring-1 ring-inset ring-neutral-300/80 dark:ring-neutral-700/80',
 			'focus-within:ring-2 focus-within:ring-inset',
-			'dark:focus-within:ring-blue-300',
-			hasError && 'dark:ring-red-400 dark:focus-within:ring-red-400'
+			'focus-within:ring-blue-400 dark:focus-within:ring-blue-300',
+			hasError && 'ring-red-500 focus-within:ring-red-500 dark:ring-red-400 dark:focus-within:ring-red-400'
 		)}
 		{...rest}
 		bind:value

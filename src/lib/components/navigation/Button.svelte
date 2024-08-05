@@ -18,10 +18,10 @@
 		'font-semibold tracking-wide leading-none flex items-center justify-center gap-1 rounded-md',
 		size === 'sm' && 'px-3.5 h-10 text-sm',
 		size === 'md' && 'px-4 h-11 text-base',
-		variant === 'default' && 'dark:bg-neutral-700/60 dark:text-neutral-200',
-		variant === 'primary' && 'dark:bg-blue-300 dark:text-neutral-950',
-		variant === 'secondary' && 'dark:bg-blue-500/10 dark dark:text-blue-300',
-		variant === 'transparent' && 'dark:hover:bg-neutral-800',
+		variant === 'default' && 'bg-neutral-100 text-neutral-800 dark:bg-neutral-700/60 dark:text-neutral-200',
+		variant === 'primary' && 'bg-blue-500 text-white dark:bg-blue-300 dark:text-neutral-950',
+		variant === 'secondary' && 'bg-blue-100/40 text-blue-700 dark:bg-blue-500/10 dark dark:text-blue-300',
+		variant === 'transparent' && 'hover:bg-neutral-100/40 dark:hover:bg-neutral-800',
 		className
 	);
 </script>

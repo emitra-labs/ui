@@ -31,7 +31,7 @@ module.exports = {
 						},
 						code: {
 							fontFamily: '"Fira Code", monospace !important',
-							fontWeight: '400 !important'
+							fontWeight: '500 !important'
 						},
 						pre: {
 							backgroundColor: theme('colors.neutral.800') + ' !important',
@@ -40,6 +40,7 @@ module.exports = {
 						},
 						'pre code': {
 							fontSize: '0.935rem !important',
+							fontWeight: '500 !important',
 							lineHeight: theme('lineHeight.relaxed') + ' !important'
 						},
 						th: {

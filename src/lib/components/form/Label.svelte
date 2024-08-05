@@ -6,7 +6,7 @@
 
 	const { class: className, ...rest } = $$restProps;
 
-	$: _class = twMerge('block font-medium mb-1.5 text-neutral-900 dark:text-neutral-200', className);
+	$: _class = twMerge('block font-semibold mb-1.5 text-neutral-900 dark:text-neutral-200', className);
 </script>
 
 <label class={_class} {...rest}>
