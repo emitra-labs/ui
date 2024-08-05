@@ -7,7 +7,7 @@
 </script>
 
 <div class="h-full flex flex-col items-center justify-center">
-	<h1 class="text-3xl font-semibold mb-2.5">Welcome Back</h1>
+	<h1 class="text-3xl font-bold mb-2.5">Welcome Back</h1>
 	<p class="dimmed mb-9">Let's continue your journey with us.</p>
 
 	<form class="w-full max-w-72" on:submit={handleSubmit}>
