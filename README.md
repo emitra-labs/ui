@@ -30,15 +30,15 @@ Update `tailwind.config.js` file:
 ```javascript
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: [
-		'./src/**/*.{html,js,svelte,ts}',
-		'./node_modules/@emitra-labs/ui/dist/**/*.{js,svelte}'
-	],
-	theme: {
-		extend: {}
-	},
-	plugins: [],
-	presets: [require('@emitra-labs/ui/preset.cjs')]
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+    './node_modules/@emitra-labs/ui/dist/**/*.{js,svelte}'
+  ],
+  theme: {
+    extend: {}
+  },
+  plugins: [],
+  presets: [require('@emitra-labs/ui/preset.cjs')]
 };
 ```
 
@@ -46,12 +46,12 @@ Update `src/routes/+layout.svelte` file:
 
 ```svelte
 <script>
-	import { EmitraProvider } from '@emitra-labs/ui';
-	import '@emitra-labs/ui/styles.css';
+  import { EmitraProvider } from '@emitra-labs/ui';
+  import '@emitra-labs/ui/styles.css';
 </script>
 
 <EmitraProvider>
-	<slot />
+  <slot />
 </EmitraProvider>
 ```
 
@@ -59,7 +59,7 @@ That's it. Now, you can start using the components like this:
 
 ```svelte
 <script>
-	import { Button } from '@emitra-labs/ui';
+  import { Button } from '@emitra-labs/ui';
 </script>
 
 <Button>Hello Button</Button>

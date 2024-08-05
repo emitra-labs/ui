@@ -7,7 +7,7 @@
 
 <Container>
 	<div class="py-32 text-center">
-		<h1 class="text-4xl font-semibold mb-3">Develop Svelte Apps Faster</h1>
+		<h1 class="text-4xl font-bold mb-3">Develop Svelte Apps Faster</h1>
 		<p class="dimmed text-lg max-w-xl mx-auto mb-6">
 			Simplify your web development with this comprehensive library of versatile and responsive
 			Svelte UI components.

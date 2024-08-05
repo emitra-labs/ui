@@ -65,7 +65,7 @@
 <div class="flex flex-col gap-9 pl-2.5 pr-3.5 pb-3">
 	{#each groupedItems as groupedItem}
 		<div>
-			<h3 class="text-xs font-medium dimmed uppercase mb-3">{groupedItem.title}</h3>
+			<p class="text-xs font-semibold tracking-wider dimmed uppercase mb-3">{groupedItem.title}</p>
 			<div class="flex flex-col gap-1 -mx-2.5">
 				{#each groupedItem.items as item}
 					{@const active = Boolean(item.href) && $page.url.pathname.startsWith(item.href || '')}

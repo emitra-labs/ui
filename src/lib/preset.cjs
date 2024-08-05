@@ -4,12 +4,7 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
-			colors: {
-				neutral: {
-					800: 'rgb(39, 39, 39)',
-					900: 'rgb(29, 29, 29)'
-				}
-			},
+			colors: {},
 			fontFamily: {
 				mono: ['Fira Code', 'monospace'],
 				sans: ['Manrope', 'sans-serif']
@@ -18,7 +13,7 @@ module.exports = {
 				DEFAULT: {
 					css: {
 						'h1, h2, h3, h4': {
-							fontWeight: theme('fontWeight.semibold')
+							fontWeight: theme('fontWeight.bold')
 						},
 						h1: {
 							fontSize: theme('fontSize.3xl'),
