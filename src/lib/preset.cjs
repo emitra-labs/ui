@@ -10,8 +10,11 @@ module.exports = {
 				sans: ['Manrope', 'sans-serif']
 			},
 			typography: ({ theme }) => ({
-				DEFAULT: {
+				neutral: {
 					css: {
+						'--tw-prose-pre-bg': theme('colors.neutral.50'),
+						'--tw-prose-pre-code': theme('colors.neutral.900'),
+
 						'h1, h2, h3, h4': {
 							fontWeight: theme('fontWeight.bold')
 						},
@@ -34,14 +37,14 @@ module.exports = {
 							fontWeight: '500 !important'
 						},
 						pre: {
-							backgroundColor: theme('colors.neutral.800') + ' !important',
+							// backgroundColor: theme('colors.neutral.800') + ' !important',
 							padding: '1rem 1.25rem !important',
 							margin: '1.35rem 0 !important'
 						},
 						'pre code': {
 							fontSize: '0.935rem !important',
 							fontWeight: '500 !important',
-							lineHeight: theme('lineHeight.relaxed') + ' !important'
+							lineHeight: theme('lineHeight.tight') + ' !important'
 						},
 						th: {
 							fontWeight: theme('fontWeight.medium'),
